@@ -34,7 +34,6 @@ Power BI
 
 DAX
 
-Excel
 
 
 
