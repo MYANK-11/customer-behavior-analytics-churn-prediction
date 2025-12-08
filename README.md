@@ -69,12 +69,10 @@ payment_method
 purchase_frequency_days
 
 
-⚙️ Project Workflow (End-to-End)
 
-## CSV Dataset → Python Data Cleaning → PostgreSQL Database →
-## SQL Business Analysis → Power BI Dashboard → Business Decisions
+## ⚙️ Project Workflow (End-to-End)
 
-
+ CSV Dataset → Python Data Cleaning → PostgreSQL Database → SQL Business Analysis → Power BI Dashboard → Business Decisions 
 
 
 1️⃣ Data Cleaning (Python)
