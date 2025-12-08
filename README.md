@@ -151,7 +151,7 @@ The KPI is calculated using:
 ✅ Not summed flags
 
 
-📈 Key Business Insights
+## 📈 Key Business Insights
 
 Subscription customers generate significantly higher repeat revenue.
 
