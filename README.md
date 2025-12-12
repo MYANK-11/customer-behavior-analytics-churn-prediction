@@ -2,42 +2,42 @@
 
 An end-to-end customer behavior and churn risk analysis project using SQL, Python, and Power BI. This project focuses on understanding customer purchase behavior, identifying revenue drivers, and detecting customers at high risk of churn using behavioral metrics.
 
-🚀Project Objective
+## 🚀Project Objective
 
-To analyze customer shopping behavior and answer the following business questions:
+   •To analyze customer shopping behavior and answer the following business questions:
 
-What factors drive revenue across age groups, gender, and product categories?
+   •What factors drive revenue across age groups, gender, and product categories?
 
-How do subscription status, discounts, and shipping types impact purchasing behavior?
+   •How do subscription status, discounts, and shipping types impact purchasing behavior?
 
-How does purchase frequency relate to spending?
+   •How does purchase frequency relate to spending?
 
-Which customers are at high risk of churn based on historical behavior?
+   •Which customers are at high risk of churn based on historical behavior?
 
-The final output is an interactive business intelligence dashboard built in Power BI with a dedicated Churn Risk KPI.
+   •The final output is an interactive business intelligence dashboard built in Power BI with a dedicated Churn Risk KPI.
 
 
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Tools & Technologies:
 
-Python (Pandas, NumPy)
+1.Python (Pandas, NumPy)
 
-PostgreSQL
+2.PostgreSQL
 
-SQL
+3.SQL
 
-SQLAlchemy
+4.SQLAlchemy
 
-Power BI
+5.Power BI
 
-DAX
-
-
+6.DAX
 
 
-📂 Dataset Overview
+
+
+## 📂 Dataset Overview
 
 Source File: customer_shopping_behavior.csv
 
@@ -45,124 +45,124 @@ Total Records: 3,900
 
 Total Features: 18
 
-Key Columns:
+Key Columns:-
 
-customer_id
+  •customer_id
 
-age, gender, age_group
+  •age, gender, age_group
 
-item_purchased, category
+  •item_purchased, category
 
-purchase_amount
+  •purchase_amount
 
-subscription_status
+  •subscription_status
 
-discount_applied
+  •discount_applied
 
-shipping_type
+  •shipping_type
 
-previous_purchases
+  •previous_purchases
 
-payment_method
+  •payment_method
 
-purchase_frequency_days
+  •purchase_frequency_days
 
 
 
 ## ⚙️ Project Workflow (End-to-End)
 
- CSV Dataset → Python Data Cleaning → PostgreSQL Database → SQL Business Analysis → Power BI Dashboard → Business Decisions 
+    CSV Dataset → Python Data Cleaning → PostgreSQL Database → SQL Business Analysis → Power BI Dashboard → Business Decisions 
 
 
-1️⃣ Data Cleaning (Python)
+## 1️⃣ Data Cleaning (Python)
 
-Removed duplicates
+ •Removed duplicates
 
-Handled missing values
+ •Handled missing values
 
 Created engineered columns:
 
-age_group
+  •age_group
 
-purchase_frequency_days
+  •purchase_frequency_days
 
-2️⃣ Data Storage (PostgreSQL)
+## 2️⃣ Data Storage (PostgreSQL)
 
-Cleaned dataset loaded into PostgreSQL using SQLAlchemy
+ •Cleaned dataset loaded into PostgreSQL using SQLAlchemy
 
-All analysis performed using pure SQL
+ •All analysis performed using pure SQL
 
-3️⃣ SQL Business Analysis
+## 3️⃣ SQL Business Analysis
 
 Key analysis areas:
 
-Revenue by category, age group, and gender
+ •Revenue by category, age group, and gender
 
-Subscription vs non-subscription behavior
+ •Subscription vs non-subscription behavior
 
-Impact of discounts on revenue
+ •Impact of discounts on revenue
 
-Customer loyalty using previous purchase history
+ •Customer loyalty using previous purchase history
 
-Purchase frequency vs spending behavior
+ •Purchase frequency vs spending behavior
 
-High churn-risk customer identification
+ •High churn-risk customer identification
 
-4️⃣ Power BI Dashboard
+## 4️⃣ Power BI Dashboard
 
 KPIs:
 
-Number of Customers
+ •Number of Customers
 
-Average Purchase Amount
+ •Average Purchase Amount
 
-High Churn-Risk Customers (Distinct KPI)
+ •High Churn-Risk Customers (Distinct KPI)
 
 Visuals:
 
-Revenue by category and age group
+   •Revenue by category and age group
 
-Subscription analysis
+ •Subscription analysis
 
-Purchase frequency vs spending
+ •Purchase frequency vs spending
 
 Filters:
 
-Subscription status
+ •Subscription status
 
-Gender
+ •Gender
 
-Category
+ •Category
 
-Shipping type
+ •Shipping type
 
-🔍 Churn Risk Logic
+## 🔍 Churn Risk Logic
 
-Customers are classified as High Churn Risk if:
+    Customers are classified as High Churn Risk if:
 
-previous_purchases >= 5
+          previous_purchases >= 5
 
-purchase_frequency_days > 45
+          purchase_frequency_days > 45
 
-The KPI is calculated using:
-
+## The KPI is calculated using:
+```
 ✅ Distinct count of customers
 ✅ Not row-level counts
 ✅ Not summed flags
-
+```
 
 ## 📈 Key Business Insights
 
-Subscription customers generate significantly higher repeat revenue.
+ •Subscription customers generate significantly higher repeat revenue.
 
-Discount-driven customers show lower long-term loyalty.
+ •Discount-driven customers show lower long-term loyalty.
 
-Very frequent buyers tend to stabilize revenue volume more than rare buyers.
+ •Very frequent buyers tend to stabilize revenue volume more than rare buyers.
 
-A large segment of historically active customers shows churn risk due to long inactivity gaps.
+ •A large segment of historically active customers shows churn risk due to long inactivity gaps.
 
 
-✅ Final Output
+## ✅ Final Output
 
 ✔️ Production-grade Power BI dashboard
 
@@ -172,7 +172,7 @@ A large segment of historically active customers shows churn risk due to long in
 
 ✔️ Executive-ready business report
 
-## SQL → DAX → Dashboard → Business Decision
+    ## SQL → DAX → Dashboard → Business Decision
 
 
 
