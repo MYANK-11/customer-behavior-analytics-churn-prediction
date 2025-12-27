@@ -1,6 +1,6 @@
 # 📊Customer Behavior & Churn Analysis
 
-An end-to-end customer behavior and churn risk analysis project using SQL, Python, and Power BI. This project focuses on understanding customer purchase behavior, identifying revenue drivers, and detecting customers at high risk of churn using behavioral metrics.
+An end-to-end customer behavior and churn risk analysis project using SQL, Python, and Power BI , And build the predictive Machine Learning Model .This project focuses on understanding customer purchase behavior, identifying revenue drivers, and detecting customers at high risk of churn using behavioral metrics.
 
 ## 🚀Project Objective
 
