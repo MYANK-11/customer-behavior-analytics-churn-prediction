@@ -141,7 +141,7 @@ The project delivers an end-to-end analytics and machine learning solution spann
 
 ### Project Structure
 
-    customer-behavior-churn/
+    customer-behavior-analytics-churn-prediction/
     │
     ├── data/
     │   └── customer_shopping_behavior.csv
