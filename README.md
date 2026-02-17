@@ -1,181 +1,158 @@
-# 📊Customer Behavior & Churn Analysis
+# Customer Behavior Analytics & Churn Prediction
 
-An end-to-end customer behavior and churn risk analysis project using SQL, Python, and Power BI , And build the predictive Machine Learning Model .This project focuses on understanding customer purchase behavior, identifying revenue drivers, and detecting customers at high risk of churn using behavioral metrics.
+### End-to-End Data Analytics and Machine Learning Pipeline
 
-## 🚀Project Objective
+This project analyzes retail customer purchasing behavior and develops a predictive churn model using behavioral feature engineering and machine learning. It demonstrates a complete data workflow spanning SQL analytics, statistical exploration, predictive modeling, and business visualization to support customer retention and marketing strategy decisions..
 
-   •To analyze customer shopping behavior and answer the following business questions:
 
-   •What factors drive revenue across age groups, gender, and product categories?
 
-   •How do subscription status, discounts, and shipping types impact purchasing behavior?
+### Business Problem
+A retail company aims to understand customer purchasing behavior and proactively identify churn-risk customers to improve retention, engagement, and revenue optimization. The objective is to analyze demographic and behavioral purchase patterns, uncover key drivers of customer loyalty, and develop predictive signals that enable targeted marketing and customer retention strategies.
 
-   •How does purchase frequency relate to spending?
 
-   •Which customers are at high risk of churn based on historical behavior?
 
-   •The final output is an interactive business intelligence dashboard built in Power BI with a dedicated Churn Risk KPI.
+### Dataset
 
+    • 3,900 retail customers
 
+    • Demographics, purchase behavior, subscription, and spending attributes
 
-## 🛠 Tech Stack
+    • Aggregated customer-level transactional features
 
-Tools & Technologies:
 
-1.Python (Pandas, NumPy)
+## Analytics Phase (Data Analyst)
 
-2.PostgreSQL
+Exploratory and SQL-based analysis was conducted to evaluate:
 
-3.SQL
+   • revenue distribution and spending patterns
 
-4.SQLAlchemy
+   • customer segmentation by demographics and product category
 
-5.Power BI
+   • purchase frequency and subscription behavior
 
-6.DAX
+   • promotion and discount dependency
 
-7.Scikit - learn
+   • cohort-level engagement trends
 
+Insights were delivered through interactive Power BI dashboards highlighting revenue drivers, customer segments, and retention-risk indicators.
 
-## 📂 Dataset Overview
 
-Source File: customer_shopping_behavior.csv
 
-Total Records: 3,900
+## Machine Learning Phase (Data Scientist)
 
-Total Features: 18
+A predictive churn model was developed using engineered behavioral features and a multi-factor churn definition aligned with real retail disengagement patterns.
 
-Key Columns:-
+### Target Engineering
 
-  •customer_id
+Churn was defined using behavioral disengagement signals:
+  
+    • low purchase frequency
 
-  •age, gender, age_group
+    • low purchase history
 
-  •item_purchased, category
+    • lack of subscription
 
-  •purchase_amount
+    • low spending
 
-  •subscription_status
+    Customers meeting ≥2 conditions were labeled churn-risk.
 
-  •discount_applied
 
-  •shipping_type
 
-  •previous_purchases
+### Feature Engineering
 
-  •payment_method
+Behavioral predictors included:
 
-  •purchase_frequency_days
+    • purchase history tiers
 
+    • subscription status
 
+    • spending level
 
-## ⚙️ Project Workflow (End-to-End)
+    • demographic and category features
 
-    CSV Dataset → Python Data Cleaning → PostgreSQL Database → SQL Business Analysis → Power BI Dashboard → Business Decisions 
+    • promotion and discount usage
 
+Categorical variables were one-hot encoded and numeric features imputed using median strategy to ensure modeling integrity.
 
-## 1️⃣ Data Cleaning (Python)
 
- •Removed duplicates
+### Model Training & Evaluation
 
- •Handled missing values
+Models were trained using scikit-learn pipelines:
 
-Created engineered columns:
+    • Logistic Regression
 
-  •age_group
+    • Random Forest
 
-  •purchase_frequency_days
+Evaluation metrics:
 
-## 2️⃣ Data Storage (PostgreSQL)
+    • Accuracy
 
- •Cleaned dataset loaded into PostgreSQL using SQLAlchemy
+    • ROC-AUC
+  
+### Model Performance
 
- •All analysis performed using pure SQL
+    • Logistic Regression — Accuracy 80.5%, ROC-AUC 0.91
 
-## 3️⃣ SQL Business Analysis
+    • Random Forest — Accuracy 79.0%, ROC-AUC 0.91
 
-Key analysis areas:
+Behavioral target engineering improved ROC-AUC from ~0.53 (frequency-only baseline) to 0.91, demonstrating the impact of engagement-based churn definition on predictive performance.
 
- •Revenue by category, age group, and gender
 
- •Subscription vs non-subscription behavior
 
- •Impact of discounts on revenue
+### Key Churn Drivers
 
- •Customer loyalty using previous purchase history
+Model interpretability identified primary churn signals:
 
- •Purchase frequency vs spending behavior
+    • low purchase history
 
- •High churn-risk customer identification
+    • lack of subscription
 
-## 4️⃣ Power BI Dashboard
+    • behavioral engagement level
 
-KPIs:
 
- •Number of Customers
+These drivers align with real-world retail retention patterns and provide actionable targeting insights.
 
- •Average Purchase Amount
+### Business Impact
 
- •High Churn-Risk Customers (Distinct KPI)
+The project demonstrates how combining analytics and machine learning enables:
 
-Visuals:
+    • identification of high-risk customer segments
 
-   •Revenue by category and age group
+    • retention targeting signals
 
- •Subscription analysis
+    • behavioral engagement scoring
 
- •Purchase frequency vs spending
+    • data-driven marketing prioritization
 
-Filters:
 
- •Subscription status
+### Project Deliverables
 
- •Gender
+The project delivers an end-to-end analytics and machine learning solution spanning descriptive analysis, predictive modeling, and business insight delivery.
 
- •Category
 
- •Shipping type
+<img width="2736" height="2799" alt="Deliverables" src="https://github.com/user-attachments/assets/a2b846e4-25c2-467d-922c-cebf441ebcba" />
 
-## 🔍 Churn Risk Logic
 
-    Customers are classified as High Churn Risk if:
+### Tech Stack
 
-          previous_purchases >= 5
+<img width="2376" height="2172" alt="tech stack" src="https://github.com/user-attachments/assets/50b182fd-cdae-483a-9da1-b4afa503e930" />
 
-          purchase_frequency_days > 45
 
-## The KPI is calculated using:
-```
-✅ Distinct count of customers
-✅ Not row-level counts
-✅ Not summed flags
-```
 
-## 📈 Key Business Insights
+<!--# Project Structure-->
 
- •Subscription customers generate significantly higher repeat revenue.
 
- •Discount-driven customers show lower long-term loyalty.
 
- •Very frequent buyers tend to stabilize revenue volume more than rare buyers.
+### Why This Project Matters
 
- •A large segment of historically active customers shows churn risk due to long inactivity gaps.
+This project showcases the integration of data analytics and machine learning to transform customer behavior data into predictive retention insights. It reflects real industry workflows where exploratory analysis, statistical reasoning, and predictive modeling combine to support business decision-making.
 
 
-## ✅ Final Output
 
-✔️ Production-grade Power BI dashboard
 
-✔️ SQL-driven behavioral analysis
 
-✔️ Real-time churn monitoring KPI
 
-✔️ Executive-ready business report
-
-    ## SQL → DAX → Dashboard → Business Decision
-
-
-
+<!--
 ## 📌 Author
 
 MAYANK P. SAVANI 
