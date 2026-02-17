@@ -139,8 +139,31 @@ The project delivers an end-to-end analytics and machine learning solution spann
 
 
 
-<!--# Project Structure-->
+### Project Structure
 
+    customer-behavior-churn/
+    │
+    ├── data/
+    │   └── customer_shopping_behavior.csv
+    │
+    ├── notebooks/
+    │   ├── customer_shopping_behavior.ipynb
+    │   └── customer_shopping_behavior_ml_model.ipynb
+    │
+    ├── sql/
+    │   ├── SQL_BUSINESS_ANALYTIC.sql
+    │   └── SQL_BUSINESS_ANALYTIC_QUESTIONS.pdf
+    │
+    ├── powerbi/
+    │   └── Customer Behaviour Analysis Dashboard.pbix
+    │
+    ├── reports/
+    │   ├── Customer Behavior Analysis Report.pdf
+    │   └── Customer Behavior Analysis Report PPT.pptx 
+    │
+    ├── README.md
+    ├── LICENSE
+    └── Problem Statement And Deliverables.pdf
 
 
 ### Why This Project Matters
