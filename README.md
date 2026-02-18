@@ -1,6 +1,6 @@
 # Customer Behavior Analytics & Churn Prediction
 
-### End-to-End Data Analytics and Machine Learning Pipeline
+### End-to-End Customer Analytics & Churn Prediction Pipeline
 
 This project analyzes retail customer purchasing behavior and develops a predictive churn model using behavioral feature engineering and machine learning. It demonstrates a complete data workflow spanning SQL analytics, statistical exploration, predictive modeling, and business visualization to support customer retention and marketing strategy decisions..
 
@@ -9,6 +9,15 @@ This project analyzes retail customer purchasing behavior and develops a predict
 ### Business Problem
 A retail company aims to understand customer purchasing behavior and proactively identify churn-risk customers to improve retention, engagement, and revenue optimization. The objective is to analyze demographic and behavioral purchase patterns, uncover key drivers of customer loyalty, and develop predictive signals that enable targeted marketing and customer retention strategies.
 
+#### The objective of this project is to:
+
+• Analyze customer purchasing behavior and engagement patterns
+
+• Identify drivers of customer retention and churn risk
+
+• Build a predictive churn model using behavioral signals
+
+• Operationalize churn insights in an interactive BI dashboard
 
 
 ### Dataset
@@ -18,6 +27,8 @@ A retail company aims to understand customer purchasing behavior and proactively
     • Demographics, purchase behavior, subscription, and spending attributes
 
     • Aggregated customer-level transactional features
+
+    • ML predictions generated from engineered churn model (churn_predictions.csv)
 
 
 ## Analytics Phase (Data Analyst)
@@ -54,7 +65,8 @@ Churn was defined using behavioral disengagement signals:
 
     • low spending
 
-    Customers meeting ≥2 conditions were labeled churn-risk.
+    Customers meeting ≥2 conditions were labeled churn-risk , forming the predictive target used in modeling and BI integration.
+    
 
 
 
@@ -112,6 +124,22 @@ Model interpretability identified primary churn signals:
 
 These drivers align with real-world retail retention patterns and provide actionable targeting insights.
 
+
+### ML-Integrated Dashboard Insights
+
+The Power BI dashboard combines analytics and model predictions to support retention strategy:
+
+    • Overall predicted churn risk KPI
+
+    • Churn risk by subscription status
+
+    • Churn risk by purchase history segment
+
+    • High-risk customer identification table
+
+This demonstrates how predictive modeling can be operationalized within BI environments to support business decision-making.
+
+
 ### Business Impact
 
 The project demonstrates how combining analytics and machine learning enables:
@@ -144,8 +172,9 @@ The project delivers an end-to-end analytics and machine learning solution spann
     customer-behavior-analytics-churn-prediction/
     │
     ├── data/
-    │   └── customer_shopping_behavior.csv
-    │
+    │    ├── customer_shopping_behavior.csv
+    │    └── churn_predictions.csv
+    |   
     ├── notebooks/
     │   ├── customer_shopping_behavior.ipynb
     │   └── customer_shopping_behavior_ml_model.ipynb
@@ -155,8 +184,8 @@ The project delivers an end-to-end analytics and machine learning solution spann
     │   └── SQL_BUSINESS_ANALYTIC_QUESTIONS.pdf
     │
     ├── powerbi/
-    │   └── Customer Behaviour Analysis Dashboard.pbix
-    │
+    │   └──Customer Behaviour Analysis Dashboard.pbix
+    |
     ├── reports/
     │   ├── Customer Behavior Analysis Report.pdf
     │   └── Customer Behavior Analysis Report PPT.pptx 
@@ -168,7 +197,7 @@ The project delivers an end-to-end analytics and machine learning solution spann
 
 ### Why This Project Matters
 
-This project showcases the integration of data analytics and machine learning to transform customer behavior data into predictive retention insights. It reflects real industry workflows where exploratory analysis, statistical reasoning, and predictive modeling combine to support business decision-making.
+This project demonstrates the integration of data analytics and machine learning to move from descriptive customer behavior analysis to proactive churn prediction. It reflects real industry workflows where exploratory analysis, statistical reasoning, predictive modeling, and BI visualization combine to support customer retention strategy.
 
 
 
